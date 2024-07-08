@@ -16,5 +16,7 @@ a repository for a software engineering tips, tricks, and methodologies
 
 Directories
 - ReadMe
+- SolidPrinciples - Contains SolidPrincibles.MD with a FAQ
+- Articles
 
 
