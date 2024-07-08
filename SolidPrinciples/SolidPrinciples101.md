@@ -20,7 +20,7 @@ Detailed code examples demonstrating each principle can be found in `GeneralExam
 
 ### Interface Segregation Principle (ISP)
 📌 **Definition:** Clients should not be forced to depend on interfaces they do not use.
-- **Simple Explanation:** A smartphone user shouldn’t need to understand space technology to make a call. Similarly, a class should know only the methods it uses.
+- **Simple Explanation:** Imagine you bought a Swiss Army knife that comes packed with tools: a knife, screwdriver, corkscrew, and more. But if you only need a simple knife, carrying around the extra weight of unused tools can be cumbersome and unnecessary. Similarly, in programming, classes should not be burdened with methods they don't use. They should implement only those interfaces that are necessary for their purpose.
 
 ### Dependency Inversion Principle (DIP)
 📌 **Definition:** High-level modules should not depend on low-level modules. Both should depend on abstractions.
