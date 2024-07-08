@@ -18,5 +18,6 @@ Directories
 - ReadMe
 - SolidPrinciples - Contains SolidPrincibles.MD with a FAQ
 - Articles
+- CodeReviewCheckList.md
 
 
