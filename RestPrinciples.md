@@ -21,6 +21,12 @@ REST was introduced by Roy Fielding in his doctoral dissertation in 2000. Fieldi
 
 Each request from a client to the server must contain all the information the server needs to fulfill that request. The server doesn’t remember any previous requests from the same client.
 
+
+```javascript
+function greet() {
+    console.log("Hello, world!");
+}
+
 **Example**:
 A request to get an order might look like this:
 
