@@ -104,7 +104,6 @@ Servers can temporarily extend or customize the functionality of a client by tra
 **Example**:
 A request might be:
 
-https://api.example.com/orders
 ```javascript
 GET /widget
 
