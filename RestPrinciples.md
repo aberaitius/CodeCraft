@@ -16,8 +16,8 @@ REST was introduced by Roy Fielding in his doctoral dissertation in 2000. Fieldi
 - Layered System
 - Code on Demand (optional)
 
-##
 
+##
 ## 📦 Stateless
 
 Each request from a client to the server must contain all the information the server needs to fulfill that request. The server doesn’t remember any previous requests from the same client.
@@ -37,8 +37,8 @@ Every request includes authentication information. The server doesn’t rely on 
 **Super Simple Explanation**:
 Think of it like ordering a pizza. Every time you call the pizza place, you have to tell them your address and what you want to order, even if you’ve ordered from them before. They don’t remember your previous orders.
 
-##
 
+##
 ## 📱 Client-Server Architecture
 
 The client (front-end) and the server (back-end) are separate. They can evolve independently as long as the interface between them does not change.
@@ -49,8 +49,8 @@ The front-end might be a mobile app fetching data, while the back-end is a serve
 **Super Simple Explanation**:
 Imagine your phone (client) is a remote control, and the TV (server) is the back-end. You can upgrade the remote without changing the TV, as long as they still talk the same language (interface).
 
-##
 
+##
 ## 🗂️ Cacheable
 
 Responses from the server can be marked as cacheable or non-cacheable, to improve efficiency by reusing responses.
@@ -68,6 +68,7 @@ The list of products can be cached for an hour (3600 seconds). Clients can reuse
 Think of caching like taking a picture of a menu. If the menu doesn’t change often, you can just look at the picture instead of asking for a new menu every time.
 
 
+##
 ## 🎛️ Uniform Interface
 
 The interface between client and server must be uniform. This simplifies and decouples the architecture.
@@ -88,7 +89,7 @@ All resources (users, products, orders, etc.) are accessed using the same method
 Imagine using a universal remote for all your devices. No matter if it’s your TV, DVD player, or stereo, you use the same buttons to play, stop, or change channels.
 
 
-
+##
 ## 🏗️ Layered System
 
 The client doesn’t need to know if it is connected directly to the server or to an intermediary. This provides security and scalability.
@@ -106,7 +107,7 @@ Not knowing if the request is handled by the main server or a caching server.
 Think of mailing a letter. You don’t need to know if it goes through a local post office or a sorting facility; you just need to know it will reach the destination.
 
 
-
+##
 ## 💻 Code on Demand (optional)
 
 Servers can temporarily extend or customize the functionality of a client by transferring executable code.
