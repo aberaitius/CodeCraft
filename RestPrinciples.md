@@ -21,19 +21,15 @@ REST was introduced by Roy Fielding in his doctoral dissertation in 2000. Fieldi
 
 Each request from a client to the server must contain all the information the server needs to fulfill that request. The server doesn’t remember any previous requests from the same client.
 
-
-```javascript
-function greet() {
-    console.log("Hello, world!");
-}
-
 **Example**:
 A request to get an order might look like this:
 
+```javascript
 GET /orders/123
 
 With headers:
 Authorization: Bearer token123
+```
 
 Every request includes authentication information. The server doesn’t rely on any stored session data to know who the user is.
 
@@ -57,9 +53,10 @@ Responses from the server can be marked as cacheable or non-cacheable, to improv
 **Example**:
 A response from the server might include:
 
+```javascript
 GET /products
 Cache-Control: max-age=3600
-
+```
 The list of products can be cached for an hour (3600 seconds). Clients can reuse the cached response, reducing the number of requests to the server.
 
 **Super Simple Explanation**:
@@ -72,13 +69,13 @@ The interface between client and server must be uniform. This simplifies and dec
 **Example**:
 API Endpoints:
 
+```javascript
 GET /users
 POST /users
 GET /users/{id}
 PUT /users/{id}
 DELETE /users/{id}
-
-
+```
 All resources (users, products, orders, etc.) are accessed using the same methods (GET, POST, PUT, DELETE), making the API predictable and easy to use.
 
 **Super Simple Explanation**:
@@ -91,8 +88,9 @@ The client doesn’t need to know if it is connected directly to the server or t
 **Example**:
 A client might be a web browser making requests. Intermediaries like load balancers, caching servers, or security gateways can handle the request. The client sends a request to:
 
+```javascript
 https://api.example.com/orders
-
+```
 
 Not knowing if the request is handled by the main server or a caching server.
 
@@ -106,6 +104,8 @@ Servers can temporarily extend or customize the functionality of a client by tra
 **Example**:
 A request might be:
 
+https://api.example.com/orders
+```javascript
 GET /widget
 
 With a response:
@@ -113,6 +113,7 @@ With a response:
   // Some JavaScript code
   alert('Hello from the server!');
 </script>
+```
 
 The server sends JavaScript code that the client can execute, extending its functionality without requiring a full application update.
 
