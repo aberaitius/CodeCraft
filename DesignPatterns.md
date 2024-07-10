@@ -1,4 +1,4 @@
-## Commen Design Patterns in .NET (C#): Building Better Software 🛠️
+## Common Design Patterns in .NET (C#): Building Better Software 🛠️
 
 In the dynamic world of software development, creating applications that are not only functional but also maintainable and scalable is paramount. This is where design patterns shine. They are proven solutions to common architectural problems, providing developers with a structured approach to crafting robust and efficient software solutions.
 
